@@ -1,0 +1,8 @@
+first generate config file
+
+tsc -init
+
+
+then watch for compile
+
+tsc -w   OR   tsc --watch
