@@ -15,11 +15,11 @@ function AppBar(props: NavType) {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
-              <Nav.Link href="#features">{props.name}</Nav.Link>
-              <Nav.Link href="#pricing">About</Nav.Link>
+              <Nav.Link href="/">{props.name}</Nav.Link>
+              <Nav.Link href="/">About</Nav.Link>
             </Nav>
           </Navbar.Collapse>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <img src={logo} className="App-logo" alt="logo" />
           </Navbar.Brand>
         </Container>
