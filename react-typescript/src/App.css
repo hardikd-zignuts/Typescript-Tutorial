@@ -7,9 +7,25 @@
   pointer-events: none;
 }
 
+.bg-body1 {
+  height: 49vmin !important;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  z-index: -1;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 0.9s linear;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .bg-body1 {
+    animation: App-logo-spin1 infinite 10s linear;
   }
 }
 
@@ -20,5 +36,15 @@
 
   to {
     transform: rotate3d(1, 1, 1, 0deg);
+  }
+}
+
+@keyframes App-logo-spin1 {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
   }
 }
