@@ -32,6 +32,7 @@ function App() {
       <PersonList List={List} />
       <hr />
       <Status status="success" />
+      {/* <Status opt={true} status="success" /> */}
       <Oscar>
         <PlaceHolder>Oscar Goes to Hardik Desai</PlaceHolder>
       </Oscar>

@@ -1,5 +1,7 @@
 type StatusType = {
   status: "loading" | "success" | "error";
+  opt?: boolean; // This is Optional Prop
+  // here we use Union type because other type of string is not in condition
 };
 const Status = (props: StatusType) => {
   let msg = "";
