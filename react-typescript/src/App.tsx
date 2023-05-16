@@ -8,6 +8,7 @@ import Person from "./components/Person";
 import PersonList from "./components/PersonList";
 import PlaceHolder from "./components/PlaceHolder";
 import Status from "./components/Status";
+import ContainerStyled from "./components/ContainerStyled";
 
 function App() {
   const [val, setVal] = useState("");
@@ -46,6 +47,14 @@ function App() {
         }}
       />
       <InputBox value={val} handleChange={(e) => setVal(e.target.value)} />
+
+      <ContainerStyled
+        styles={{
+          color: "white",
+          backgroundColor: "red",
+          paddingBlock: "10px",
+        }}
+      />
     </div>
   );
 }
