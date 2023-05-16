@@ -10,6 +10,7 @@ import PlaceHolder from "./components/PlaceHolder";
 import Status from "./components/Status";
 import ContainerStyled from "./components/ContainerStyled";
 import logo from "./logo.svg";
+import User from "./components/User";
 
 function App() {
   const [val, setVal] = useState("");
@@ -33,13 +34,7 @@ function App() {
   ];
   return (
     <div className="App">
-      <img
-        // width={500}
-        // height={500}
-        src={logo}
-        className="App-logo bg-body1"
-        alt="logo"
-      />
+      <img src={logo} className="App-logo bg-body1" alt="logo" />
       <AppBar name="Home" />
       <Person person={person} />
       <PersonList List={List} />
@@ -63,6 +58,8 @@ function App() {
           paddingBlock: "10px",
         }}
       />
+      <hr />
+      <User />
     </div>
   );
 }

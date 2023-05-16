@@ -5,7 +5,7 @@ const Button = (props: ButtonType) => {
   return (
     <div>
       <button
-        className="btn btn-success my-2"
+        className="btn btn-primary my-2"
         onClick={(e) => props.handleClick(e, 1)}
       >
         Click
