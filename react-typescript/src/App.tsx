@@ -13,6 +13,8 @@ import logo from "./logo.svg";
 import User from "./components/User";
 import Counter from "./components/counter/Counter";
 import AuthUser from "./components/AuthUser";
+import Private from "./components/component-prop/Private";
+import Profile from "./components/component-prop/Profile";
 
 function App() {
   const [val, setVal] = useState("");
@@ -66,6 +68,8 @@ function App() {
       <User />
       <hr />
       <Counter />
+      <hr />
+      <Private isLogin={true} component={Profile} />
     </div>
   );
 }
