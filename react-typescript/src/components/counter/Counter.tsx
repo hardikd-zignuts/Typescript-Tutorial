@@ -6,10 +6,14 @@ const initialState = {
 type StateValue = {
   count: number;
 };
-type StateAction = {
+type UpdateAction = {
+  type: string;
   payLoad: number;
+};
+type ResetAction = {
   type: string;
 };
+type StateAction = UpdateAction | ResetAction;
 
 function reducer(state: StateValue, action: StateAction) {
   switch (action.type) {
@@ -24,6 +28,8 @@ function reducer(state: StateValue, action: StateAction) {
         ...state,
         count: state.count - 10,
       };
+    case "reset":
+      return initialState;
 
     default:
       return state;
@@ -40,6 +46,12 @@ const Counter = () => {
           className="btn btn-warning mx-2"
         >
           Increment by 10
+        </button>
+        <button
+          onClick={() => dispatch({ type: "reset" })}
+          className="btn btn-danger mx-2"
+        >
+          Reset
         </button>
         <button
           onClick={() => dispatch({ type: "decrement", payLoad: 10 })}
