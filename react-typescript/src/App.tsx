@@ -11,6 +11,7 @@ import Status from "./components/Status";
 import ContainerStyled from "./components/ContainerStyled";
 import logo from "./logo.svg";
 import User from "./components/User";
+import Counter from "./components/counter/Counter";
 
 function App() {
   const [val, setVal] = useState("");
@@ -60,6 +61,8 @@ function App() {
       />
       <hr />
       <User />
+      <hr />
+      <Counter />
     </div>
   );
 }
